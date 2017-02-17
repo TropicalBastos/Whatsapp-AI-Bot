@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvestre</title>
+  <meta name="description" content="A bot that talks to you">
+  <meta name="author" content="Ian Bastos">
+  <link rel="stylesheet" href="phone.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<h1>Silvestre the Robot</h1>
+  <div class="phone">
+  <div class="camera"></div>
+  <div class="speaker"></div>
+    <iframe class="screen" src="screen/screen.html">
+    </iframe>
+  <div class="button">
+    <div class="button-decoration">
+    <i class="fa fa-chrome"></i>
+  </div>
+  </div>
+</div>
+<script>
+  var button = document.getElementsByClassName('button-decoration')[0];
+  button.addEventListener('click',function(){
+    document.getElementsByClassName('screen')[0].contentWindow.location.reload();
+  });
+</script>
+</body>
+</html>

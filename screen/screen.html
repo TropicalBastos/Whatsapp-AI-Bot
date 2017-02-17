@@ -1,0 +1,42 @@
+<html ng-app="screenApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="screen.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="screenscript.js"></script>
+  <head>
+    <body ng-controller="headerCtrl">
+      <div class="banner-header">
+        <div class="phone-header">
+        <div class="phone-signal">
+        <i class="fa fa-signal phone-settings"></i>GlobalNetwork
+      </div>
+      <div class="phone-wifi">
+      <i class="fa fa-wifi phone-settings"></i>
+    </div>
+    <div class="phone-time">{{time}}</div>
+    <div class="phone-battery">
+    100%<i class="fa fa-battery-full phone-settings"></i>
+  </div>
+</div>
+<div class="chat-header">
+  <div class="back-arrow"></div>
+  <div class="profile"></div>
+  <div class="profile-name">Silvestre <div id="status">{{status}}</div> </div>
+  <div class="chat-options"><i class="fa fa-video-camera"></i></div>
+  <div class="chat-options2"><i class="fa fa-phone"></i></div>
+</div>
+      </div>
+      <div class="chat">
+      </div>
+      <div class="senderWrapper">
+        <div class="plus"><i class="fa fa-plus"></i></div>
+        <input class="input-message" type="text" ng-keypress="sendMessage($event)">
+        <div class="camera"><i class="fa fa-camera"></i></div>
+        <div class="ellipsis"><i class="fa fa-ellipsis-v"></i></div>
+        <div class="microphone"><i class="fa fa-microphone"></i></div>
+      </div>
+    </body>
+</html>

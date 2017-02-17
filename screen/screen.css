@@ -1,0 +1,229 @@
+body{
+  margin: 0;
+  width: 100%;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+.banner-header{
+  height: 8%;
+}
+.phone-header{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height:30%;
+  background-color: #f7f7f7;
+  top: 0;
+  z-index: 2;
+  font-family: 'Helvetica';
+  font-size: 12px;
+  font-weight: bold;
+}
+.phone-signal{
+  position: relative;
+  width:40%%;
+  left: 1%;
+}
+.phone-wifi{
+  position: relative;
+  width:20%;
+  left: 2%;
+  top: 1px;
+}
+.phone-battery{
+  position: relative;
+  left:31%;
+}
+.phone-settings{
+  width: 20px;
+  height:10px;
+  font-size: 12px !important;
+}
+.chat-header{
+  position: relative;
+  display: flex;
+  width:100%;
+  height:70%;
+  border-bottom: solid 0.5px #d8d8d8;
+}
+.back-arrow{
+  position: relative;
+  width:10px;
+  height:10px;
+  top:30%;
+  left:3%;
+  border-bottom: solid 3px #4286f4;
+  border-left: solid 3px #4286f4;
+  transform: rotate(45deg);
+}
+
+.profile{
+  position:relative;
+  background: url('res/no-pic.jpg');
+  background-size: 30px;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  left: 8%;
+  top:5%;
+}
+
+.profile-name{
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  left:10%;
+  top:15%;
+}
+
+.italic{
+  font-style: italic;
+}
+
+#status{
+  font-family: 'Helvetica';
+  font-size: 10px;
+  opacity: 0.4;
+  position:absolute;
+  top:15px;
+  left: 1px;
+}
+
+.chat-options{
+  position: relative;
+  left: 45%;
+  top: 20%;
+}
+.chat-options2{
+  position: relative;
+  left: 53.5%;
+  top: 20%;
+}
+
+.fa-video-camera{
+  color:#f7f7f7;
+  -webkit-text-stroke: 2px #4286f4;
+  font-size: 21px !important;
+}
+
+.fa-phone{
+  color:#f7f7f7;
+  -webkit-text-stroke: 2px #4286f4;
+  font-size: 21px !important;
+}
+
+.chat{
+  background: url('res/whatsapp.jpg');
+  width: 100%;
+  position: absolute;
+  height: 85.5%;
+  z-index: 1;
+  opacity: 0.7;
+  overflow-y:scroll;
+  padding-right: 20px;
+}
+
+.chat-message-you{
+  position: relative;
+  background-color: #e1fcb8;
+  border-radius: 10px;
+  padding: 5px;
+  float:right;
+  max-width: 60%;
+  margin: 5% 5% 0 0;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  font-size: 14px;
+  word-break: break-word;
+  margin-bottom: 10px;
+}
+
+.chat-message-bot{
+  position: relative;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 5px;
+  float:left;
+  max-width: 60%;
+  margin: 5% 5% 0 5%;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  font-size: 14px;
+  word-break: break-word;
+  margin-bottom: 10px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.senderWrapper{
+  position: absolute;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  border-top: solid 0.5px #d8d8d8;
+  height: 40px;
+  width: 100%;
+  z-index:2;
+  top:93.2%;
+}
+
+.plus{
+  position:relative;
+  left:4%;
+  top:24%;
+}
+
+.fa-plus{
+  color:#4286f4;
+  font-size: 21px !important;
+}
+
+.input-message{
+  position: absolute;
+  width:60%;
+  height: 75%;
+  left: 12%;
+  top: 13.5%;
+  border-radius: 50px;
+  outline:none;
+  border: solid 0.5px #e8e8e8;
+  padding: 10px;
+  font-family: 'Helvetica';
+}
+
+.camera{
+  position: absolute;
+  left: 75%;
+  top:25%;
+}
+
+.fa-camera{
+  color:#f7f7f7;
+  -webkit-text-stroke: 1px #4286f4;
+  font-size: 21px !important;
+}
+
+.ellipsis{
+  position: absolute;
+  left: 85%;
+  top: 32%;
+}
+
+.fa-ellipsis-v{
+  color: #cbcbcb;
+  font-size: 18px !important;
+}
+
+.microphone{
+  position: absolute;
+  left: 90%;
+  top: 25%;
+}
+
+.fa-microphone{
+  color:#f7f7f7;
+  -webkit-text-stroke: 1px #4286f4;
+  font-size: 21px !important;
+}

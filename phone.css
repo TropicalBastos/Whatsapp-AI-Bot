@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Geostar+Fill');
+
+body{
+  background: url('screen/res/bac.jpg') fixed no-repeat;
+  background-size: 100%;
+}
+
+h1{
+  font-family: 'Geostar Fill';
+  font-size: 50px;
+  text-align: center;
+  margin-top:50px;
+  text-shadow: 2px 2px #73ffb4;
+}
+
+.phone {
+  box-sizing: border-box;
+  margin: 50px auto;
+  width: 414px;
+  height: 736px;
+  background-color: #333;
+  border-radius: 36px;
+  border: 3px solid #ccc;
+  position: relative;
+  z-index: 1;
+  padding: 0 14px;
+  box-shadow: 0 10px 25px rgba(44,44,44,.5);
+}
+  .speaker {
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    left: 170px;
+    border-radius: 15px;
+    background-color: #1e1e1e;
+    height: 10px;
+    width: 100px;
+    box-shadow: 2px 2px black inset;
+  }
+
+
+  .camera {
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #522f2f;
+    box-shadow: 0px 3px 3px 3px black inset;
+  }
+
+  .screen {
+    background-color: #444;
+    background: linear-gradient(-45deg, rgb(44,44,44) 50px, rgb(88, 88, 88));
+    width: 380px;
+    height: 610px;
+    transform: translateY(45px);
+    position: relative;
+    z-index: 1;
+    border: none;
+  }
+
+  .button {
+    border: 2px solid #777;
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 12px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+.button-decoration{
+  position:relative;
+  left: 5px;
+  top: 5px;
+}
+.fa{
+  color:white;
+  font-size: 40px !important;
+}
+.fa:hover{
+  color: #42c2f4;
+  transition: color .4s ease-in;
+}
